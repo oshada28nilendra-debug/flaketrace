@@ -1,0 +1,366 @@
+{
+  "schema_version": 1,
+  "run_count": 4,
+  "candidate_count": 1,
+  "tests": [
+    {
+      "commit": "synthetic-a",
+      "classname": "Demo",
+      "name": "always_fails",
+      "counts": {
+        "pass": 0,
+        "fail": 3,
+        "skipped": 0,
+        "missing": 0
+      },
+      "observed_failure_rate": 1.0,
+      "candidate": false,
+      "outcomes": [
+        {
+          "run": "run-1",
+          "status": "fail",
+          "evidence": "evidence.html#e0"
+        },
+        {
+          "run": "run-2",
+          "status": "fail",
+          "evidence": "evidence.html#e1"
+        },
+        {
+          "run": "run-3",
+          "status": "fail",
+          "evidence": "evidence.html#e2"
+        }
+      ]
+    },
+    {
+      "commit": "synthetic-a",
+      "classname": "Demo",
+      "name": "mixed",
+      "counts": {
+        "pass": 2,
+        "fail": 1,
+        "skipped": 0,
+        "missing": 0
+      },
+      "observed_failure_rate": 0.3333333333333333,
+      "candidate": true,
+      "outcomes": [
+        {
+          "run": "run-1",
+          "status": "pass",
+          "evidence": "evidence.html#e3"
+        },
+        {
+          "run": "run-2",
+          "status": "fail",
+          "evidence": "evidence.html#e4"
+        },
+        {
+          "run": "run-3",
+          "status": "pass",
+          "evidence": "evidence.html#e5"
+        }
+      ]
+    },
+    {
+      "commit": "synthetic-a",
+      "classname": "Demo",
+      "name": "skipped",
+      "counts": {
+        "pass": 0,
+        "fail": 0,
+        "skipped": 3,
+        "missing": 0
+      },
+      "observed_failure_rate": null,
+      "candidate": false,
+      "outcomes": [
+        {
+          "run": "run-1",
+          "status": "skipped",
+          "evidence": "evidence.html#e6"
+        },
+        {
+          "run": "run-2",
+          "status": "skipped",
+          "evidence": "evidence.html#e7"
+        },
+        {
+          "run": "run-3",
+          "status": "skipped",
+          "evidence": "evidence.html#e8"
+        }
+      ]
+    },
+    {
+      "commit": "synthetic-a",
+      "classname": "Demo",
+      "name": "sometimes_absent",
+      "counts": {
+        "pass": 2,
+        "fail": 0,
+        "skipped": 0,
+        "missing": 1
+      },
+      "observed_failure_rate": 0.0,
+      "candidate": false,
+      "outcomes": [
+        {
+          "run": "run-1",
+          "status": "pass",
+          "evidence": "evidence.html#e9"
+        },
+        {
+          "run": "run-2",
+          "status": "missing",
+          "evidence": "evidence.html#e10"
+        },
+        {
+          "run": "run-3",
+          "status": "pass",
+          "evidence": "evidence.html#e11"
+        }
+      ]
+    },
+    {
+      "commit": "synthetic-b",
+      "classname": "Demo",
+      "name": "mixed",
+      "counts": {
+        "pass": 0,
+        "fail": 1,
+        "skipped": 0,
+        "missing": 0
+      },
+      "observed_failure_rate": 1.0,
+      "candidate": false,
+      "outcomes": [
+        {
+          "run": "run-4",
+          "status": "fail",
+          "evidence": "evidence.html#e12"
+        }
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e0",
+      "commit": "synthetic-a",
+      "run": "run-1",
+      "file": "run1.xml",
+      "sha256": "0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619",
+      "classname": "Demo",
+      "name": "always_fails",
+      "status": "fail",
+      "details": [
+        {
+          "kind": "failure",
+          "message": "seeded failure",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e1",
+      "commit": "synthetic-a",
+      "run": "run-2",
+      "file": "run2.xml",
+      "sha256": "bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8",
+      "classname": "Demo",
+      "name": "always_fails",
+      "status": "fail",
+      "details": [
+        {
+          "kind": "error",
+          "message": "seeded error",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e2",
+      "commit": "synthetic-a",
+      "run": "run-3",
+      "file": "run3.xml",
+      "sha256": "7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac",
+      "classname": "Demo",
+      "name": "always_fails",
+      "status": "fail",
+      "details": [
+        {
+          "kind": "failure",
+          "message": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e3",
+      "commit": "synthetic-a",
+      "run": "run-1",
+      "file": "run1.xml",
+      "sha256": "0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619",
+      "classname": "Demo",
+      "name": "mixed",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "id": "e4",
+      "commit": "synthetic-a",
+      "run": "run-2",
+      "file": "run2.xml",
+      "sha256": "bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8",
+      "classname": "Demo",
+      "name": "mixed",
+      "status": "fail",
+      "details": [
+        {
+          "kind": "failure",
+          "message": "seeded intermittent failure",
+          "text": "synthetic stack trace"
+        }
+      ]
+    },
+    {
+      "id": "e5",
+      "commit": "synthetic-a",
+      "run": "run-3",
+      "file": "run3.xml",
+      "sha256": "7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac",
+      "classname": "Demo",
+      "name": "mixed",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "id": "e6",
+      "commit": "synthetic-a",
+      "run": "run-1",
+      "file": "run1.xml",
+      "sha256": "0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619",
+      "classname": "Demo",
+      "name": "skipped",
+      "status": "skipped",
+      "details": [
+        {
+          "kind": "skipped",
+          "message": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e7",
+      "commit": "synthetic-a",
+      "run": "run-2",
+      "file": "run2.xml",
+      "sha256": "bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8",
+      "classname": "Demo",
+      "name": "skipped",
+      "status": "skipped",
+      "details": [
+        {
+          "kind": "skipped",
+          "message": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e8",
+      "commit": "synthetic-a",
+      "run": "run-3",
+      "file": "run3.xml",
+      "sha256": "7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac",
+      "classname": "Demo",
+      "name": "skipped",
+      "status": "skipped",
+      "details": [
+        {
+          "kind": "skipped",
+          "message": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "id": "e9",
+      "commit": "synthetic-a",
+      "run": "run-1",
+      "file": "run1.xml",
+      "sha256": "0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619",
+      "classname": "Demo",
+      "name": "sometimes_absent",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "id": "e10",
+      "commit": "synthetic-a",
+      "run": "run-2",
+      "file": "run2.xml",
+      "sha256": "bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8",
+      "classname": "Demo",
+      "name": "sometimes_absent",
+      "status": "missing",
+      "details": []
+    },
+    {
+      "id": "e11",
+      "commit": "synthetic-a",
+      "run": "run-3",
+      "file": "run3.xml",
+      "sha256": "7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac",
+      "classname": "Demo",
+      "name": "sometimes_absent",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "id": "e12",
+      "commit": "synthetic-b",
+      "run": "run-4",
+      "file": "run4.xml",
+      "sha256": "566f2df0b48eca97e63485f81c656627d6dacbcb71a94d99f6ebe785cd134d62",
+      "classname": "Demo",
+      "name": "mixed",
+      "status": "fail",
+      "details": [
+        {
+          "kind": "failure",
+          "message": "",
+          "text": ""
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "commit": "synthetic-a",
+      "run": "run-1",
+      "file": "run1.xml",
+      "sha256": "0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619"
+    },
+    {
+      "commit": "synthetic-a",
+      "run": "run-2",
+      "file": "run2.xml",
+      "sha256": "bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8"
+    },
+    {
+      "commit": "synthetic-a",
+      "run": "run-3",
+      "file": "run3.xml",
+      "sha256": "7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac"
+    },
+    {
+      "commit": "synthetic-b",
+      "run": "run-4",
+      "file": "run4.xml",
+      "sha256": "566f2df0b48eca97e63485f81c656627d6dacbcb71a94d99f6ebe785cd134d62"
+    }
+  ]
+}
