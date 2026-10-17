@@ -1,0 +1,179 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{font:16px system-ui;background:#f5f2ea;color:#27342b;max-width:1200px;margin:30px auto;padding:20px}table{border-collapse:collapse;background:white;width:100%}td,th{padding:12px;border-bottom:1px solid #ddd;text-align:left}section{background:white;padding:20px;margin:20px 0;border-radius:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere}.scroll{overflow:auto}a{color:#7d381f}</style><title>FlakeTrace evidence</title><a href="index.html">Back to report</a><h1>Outcome evidence</h1><section id="e0"><h2>run-1 · fail</h2><pre>{
+  &quot;id&quot;: &quot;e0&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-1&quot;,
+  &quot;file&quot;: &quot;run1.xml&quot;,
+  &quot;sha256&quot;: &quot;0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;always_fails&quot;,
+  &quot;status&quot;: &quot;fail&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;failure&quot;,
+      &quot;message&quot;: &quot;seeded failure&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e1"><h2>run-2 · fail</h2><pre>{
+  &quot;id&quot;: &quot;e1&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-2&quot;,
+  &quot;file&quot;: &quot;run2.xml&quot;,
+  &quot;sha256&quot;: &quot;bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;always_fails&quot;,
+  &quot;status&quot;: &quot;fail&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;error&quot;,
+      &quot;message&quot;: &quot;seeded error&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e2"><h2>run-3 · fail</h2><pre>{
+  &quot;id&quot;: &quot;e2&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-3&quot;,
+  &quot;file&quot;: &quot;run3.xml&quot;,
+  &quot;sha256&quot;: &quot;7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;always_fails&quot;,
+  &quot;status&quot;: &quot;fail&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;failure&quot;,
+      &quot;message&quot;: &quot;&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e3"><h2>run-1 · pass</h2><pre>{
+  &quot;id&quot;: &quot;e3&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-1&quot;,
+  &quot;file&quot;: &quot;run1.xml&quot;,
+  &quot;sha256&quot;: &quot;0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;mixed&quot;,
+  &quot;status&quot;: &quot;pass&quot;,
+  &quot;details&quot;: []
+}</pre></section><section id="e4"><h2>run-2 · fail</h2><pre>{
+  &quot;id&quot;: &quot;e4&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-2&quot;,
+  &quot;file&quot;: &quot;run2.xml&quot;,
+  &quot;sha256&quot;: &quot;bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;mixed&quot;,
+  &quot;status&quot;: &quot;fail&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;failure&quot;,
+      &quot;message&quot;: &quot;seeded intermittent failure&quot;,
+      &quot;text&quot;: &quot;synthetic stack trace&quot;
+    }
+  ]
+}</pre></section><section id="e5"><h2>run-3 · pass</h2><pre>{
+  &quot;id&quot;: &quot;e5&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-3&quot;,
+  &quot;file&quot;: &quot;run3.xml&quot;,
+  &quot;sha256&quot;: &quot;7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;mixed&quot;,
+  &quot;status&quot;: &quot;pass&quot;,
+  &quot;details&quot;: []
+}</pre></section><section id="e6"><h2>run-1 · skipped</h2><pre>{
+  &quot;id&quot;: &quot;e6&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-1&quot;,
+  &quot;file&quot;: &quot;run1.xml&quot;,
+  &quot;sha256&quot;: &quot;0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;skipped&quot;,
+  &quot;status&quot;: &quot;skipped&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;skipped&quot;,
+      &quot;message&quot;: &quot;&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e7"><h2>run-2 · skipped</h2><pre>{
+  &quot;id&quot;: &quot;e7&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-2&quot;,
+  &quot;file&quot;: &quot;run2.xml&quot;,
+  &quot;sha256&quot;: &quot;bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;skipped&quot;,
+  &quot;status&quot;: &quot;skipped&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;skipped&quot;,
+      &quot;message&quot;: &quot;&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e8"><h2>run-3 · skipped</h2><pre>{
+  &quot;id&quot;: &quot;e8&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-3&quot;,
+  &quot;file&quot;: &quot;run3.xml&quot;,
+  &quot;sha256&quot;: &quot;7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;skipped&quot;,
+  &quot;status&quot;: &quot;skipped&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;skipped&quot;,
+      &quot;message&quot;: &quot;&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section><section id="e9"><h2>run-1 · pass</h2><pre>{
+  &quot;id&quot;: &quot;e9&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-1&quot;,
+  &quot;file&quot;: &quot;run1.xml&quot;,
+  &quot;sha256&quot;: &quot;0285b8af30d17e71349053fa9301543b3a877634df276fd20d711ca210048619&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;sometimes_absent&quot;,
+  &quot;status&quot;: &quot;pass&quot;,
+  &quot;details&quot;: []
+}</pre></section><section id="e10"><h2>run-2 · missing</h2><pre>{
+  &quot;id&quot;: &quot;e10&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-2&quot;,
+  &quot;file&quot;: &quot;run2.xml&quot;,
+  &quot;sha256&quot;: &quot;bc2db42fbf88ecc88b54727341fe289c30f519ff24929ed1592e4e26e561d2e8&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;sometimes_absent&quot;,
+  &quot;status&quot;: &quot;missing&quot;,
+  &quot;details&quot;: []
+}</pre></section><section id="e11"><h2>run-3 · pass</h2><pre>{
+  &quot;id&quot;: &quot;e11&quot;,
+  &quot;commit&quot;: &quot;synthetic-a&quot;,
+  &quot;run&quot;: &quot;run-3&quot;,
+  &quot;file&quot;: &quot;run3.xml&quot;,
+  &quot;sha256&quot;: &quot;7a74335f91724ecdc9569355e6d5dfb4dd19a650de450851a0113eaa17461dac&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;sometimes_absent&quot;,
+  &quot;status&quot;: &quot;pass&quot;,
+  &quot;details&quot;: []
+}</pre></section><section id="e12"><h2>run-4 · fail</h2><pre>{
+  &quot;id&quot;: &quot;e12&quot;,
+  &quot;commit&quot;: &quot;synthetic-b&quot;,
+  &quot;run&quot;: &quot;run-4&quot;,
+  &quot;file&quot;: &quot;run4.xml&quot;,
+  &quot;sha256&quot;: &quot;566f2df0b48eca97e63485f81c656627d6dacbcb71a94d99f6ebe785cd134d62&quot;,
+  &quot;classname&quot;: &quot;Demo&quot;,
+  &quot;name&quot;: &quot;mixed&quot;,
+  &quot;status&quot;: &quot;fail&quot;,
+  &quot;details&quot;: [
+    {
+      &quot;kind&quot;: &quot;failure&quot;,
+      &quot;message&quot;: &quot;&quot;,
+      &quot;text&quot;: &quot;&quot;
+    }
+  ]
+}</pre></section></html>

@@ -1,0 +1,1 @@
+<testsuites><testsuite name="synthetic"><testcase classname="Demo" name="mixed"><failure message="seeded intermittent failure">synthetic stack trace</failure></testcase><testcase classname="Demo" name="always_fails"><error message="seeded error"/></testcase><testcase classname="Demo" name="skipped"><skipped/></testcase></testsuite></testsuites>

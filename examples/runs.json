@@ -1,0 +1,6 @@
+[
+ {"commit":"synthetic-a","run":"run-1","file":"run1.xml"},
+ {"commit":"synthetic-a","run":"run-2","file":"run2.xml"},
+ {"commit":"synthetic-a","run":"run-3","file":"run3.xml"},
+ {"commit":"synthetic-b","run":"run-4","file":"run4.xml"}
+]

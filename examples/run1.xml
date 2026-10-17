@@ -1,0 +1,1 @@
+<testsuite name="synthetic"><testcase classname="Demo" name="mixed"/><testcase classname="Demo" name="always_fails"><failure message="seeded failure"/></testcase><testcase classname="Demo" name="sometimes_absent"/><testcase classname="Demo" name="skipped"><skipped/></testcase></testsuite>
